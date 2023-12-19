@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --paars: #5722CD;
+    --blauw: #4845E4;
+    --roze: #ED4385;
+    --zwart: #0C0C0C; /*(voor standaard tekst)*/
+    --lichtpaars: #F2F0FF; /*(voor de grote zwevende woorden, zoals "hello" en "services")*/
+    --lichtgrijs: #F3F6F9; /*(voor de achtergrond van de projecten)*/
+    --grijs: #7A7A7A; /*(voor de service-tegel tekst)*/
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Merrieweather, serif;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+button, input {
+    font-family: inherit;
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+/* --------------- 3.1 Reusables ----------------------- */
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-container {
+    flex-basis: 1200px;
+    margin: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+/* --------------- 3.2 Other --------------------------- */
+a,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: var(--lichtgrijs)
+}
+
+button {
+    background-color: var(--roze);
+    border-radius: 30px;
+    border: none;
+    color: var(--lichtgrijs);
+    padding: 18px 35px;
+    margin-top: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/*img {*/
+/*    width: 100%;*/
+/*}*/
+
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+.header-section {
+    background-color: var(--blauw);
+
+}
+
+.header-navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 24px 0;
+}
+
+.header-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 320px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-welcome-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--lichtgrijs);
+    width: 600px;
+    margin-top: 100px;
+    text-align: center;
+    gap: 20px;
+
+}
+
+.header-img {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 0 0;
+    flex-basis: 50px;
+}
+
+/* --------------- 4.3 MAIN ------------------- */
+.main-inner-container {
+    display: flex;
+    flex-direction: column;
+}
+.main-intro-container {
+    display: flex;
+    flex-direction: column;
+    width: 576px;
+
+    color: var(--blauw);
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    gap: 20px;
+    margin: 50px 0 50px 0;
+}
+
+/* --------------- 4.3.1 MAIN | ARTICLE SECTIONS------------------- */
+
+.main-intro-container-contact-us {
+    color: var(--zwart);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+}
+
+.main-intro-container-contact-us a {
+    text-decoration: none;
+    color: var(--blauw)
+}
+
+.main-sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px 0;
+    align-items: center;
+}
+
+
+.main-article-text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    flex-shrink: 0;
+    margin: 20px;
+    gap: 30px;
+    height: 100%;
+    justify-content: center;
+}
+
+.article-image-main {
+    flex-basis: 650px;
+}
+
+.article-img {
+    width: 100%;
+}
+/* --------------- 5 USP Section ------------------- */
+.usp-inner-container {
+    width: 1000px;
+    margin: 30px;
+}
+
+.usp-section {
+    display: flex;
+    flex-basis: 1000px;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.usp-article {
+    width: 250px;
+
+    font-size: 10px;
+    color: var(--grijs);
+    border: 1px solid var(--grijs);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.article-usp-img {
+width: 50px}
+
+/* --------------- 6 FOOTER ------------------- */
+footer {
+    background-color: var(--zwart);
+    color: var(--lichtgrijs);
+    padding: 15px;
+    font-size: 14px;
+}
+
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
